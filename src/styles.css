@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.loader {
+  border: 5px solid #f3f3f3; /* Light grey */
+  border-top: 5px solid #04a3ff; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+ margin: auto;
+}
+.splash {
+  border: 6px solid #f3f3f3; /* Light grey */
+  border-top: 6px solid #04a3ff; /* Change this to the correct "bg-rose-400" your are using for most of your App */
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+ margin: auto;
+ margin-top: 40vh;
+}
+.confirm {
+  animation: fall 0.5s linear 1;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes fall {
+  0% {opacity: 0;}
+
+  100% {
+    opacity: 1;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+body{
+    background: #000;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+@font-face {
+    font-family: "Playball";
+    src:url("./fonts/Playball/PlayfairDisplay-VariableFont_wght.ttf")
+  }
+@font-face {
+    font-family: "Play";
+    src:url("./fonts/Play/Play-Regular.ttf")
+  }
+@font-face {
+    font-family: "Poppins";
+    src:url("./fonts/Poppins/Poppins-Medium.ttf")
+  }
+@font-face {
+    font-family: "Poppins2";
+    src:url("./fonts/Poppins/Poppins-Light.ttf")
+  }
+@font-face {
+    font-family: "Poppins1";
+    src:url("./fonts/Poppins/Poppins-Bold.ttf")
+  }
+@font-face {
+    font-family: "Elephant";
+    src:url("./fonts/elephant/ELEPHNT.TTF")
+  }
+@font-face {
+    font-family: "Racing";
+    src:url("./fonts/Racing_Sans_One/RacingSansOne-Regular.ttf")
+  }
