@@ -26,3 +26,77 @@ because they were all built as a learning curve. And since I enjoy learning new 
 - And of course codes splitting, organization and other best practices.
 
 ## App is still being built so more on that soon.
+
+# Contribution
+
+Its easy to contribute just follow the steps below
+
+> Make sure to respect anyone who is contributing and spread love not hate.
+
+# Prerequisites
+
+- Make sure you do this before the fun can begin
+1. ``` fork ``` the repo
+
+2. Then copy the link of the repo ```git https://github.com/YOUR_USERNAME/Online-Store.git ```
+
+```
+git clone https://github.com/YOUR_USERNAME/Online-Store.git 
+
+cd Online-Store
+
+git checkout -b YOUR_FAVOURITE_BRANCH_NAME
+```
+- Avoid using `main` or `master` as YOUR_FAVOURITE_BRANCH_NAME
+
+- Install dependancies
+3. This repo uses firebase
+
+To setup firebase 
+
+```
+npm install firebase
+npm install -g firebase-tools
+```
+4. Install `JAVA` in your system <a href="https://java.com/en/download/" target="_blank">JAVA DOWNLOAD </a> (required)
+5. After installing java restart your system for it to work trust me.
+
+Then 
+```
+firebase init emulators
+
+```
+
+6. This project uses these emulators so select them.
+
+- `Auth Emulator`
+- `Storage Emulator`
+- `FireStore Emulator`
+
+7. After they finish dowloading
+
+```
+firebase emulators:start
+```
+
+8. In a different terminal Navigate to the Online-Store directory then
+
+
+```
+npm start
+```
+
+
+9. Code Away 🤱 😜
+10. When you are done having fun (Make sure the current branch is your favourite branch name
+
+```
+git fetch upstream
+git merge upstream/main
+git add .
+git commit -m "What changes did you make"
+git push -u origin YOUR_FAVOURITE_BRANCH_NAME
+
+```
+
+Well done !!! 
