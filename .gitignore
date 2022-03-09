@@ -11,8 +11,6 @@
 # production
 /build
 /public/fontawesome
-/src/Images
-/src/testData.js
 # misc
 .DS_Store
 .env
