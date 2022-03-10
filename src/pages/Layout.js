@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../styles.css'
 import Logo from '../Images/Logo.png'
-import { Link, Outlet, useLocation } from 'react-router-dom';
+import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components'
 import { auth } from '../firebaseConfiguration'
@@ -17,9 +17,7 @@ const Layout = () => {
   const {getData} = useDatabase()
   const [userDetails, setUserDetails] = useState({wishlist: [], cart: []});
   let location = useLocation();
-  const signout = async () => {
-   await signOut(auth)
-  }
+ let navigate = useNavigate()
   useEffect(() => {
     if(currentUser) {
     getData(currentUser.uid).then(user => {
@@ -53,7 +51,7 @@ const Layout = () => {
                      <Icons>
                      {
                     currentUser ?  <NavIcon title={currentUser?.email} className="fas fa-user-minus" onClick={() => {
-                          signout()
+                          navigate("/user")
                           setNavDisplay("none")
                         }}></NavIcon> :
                          <Link to="/login"><NavIcon title="Log In" className="fas fa-user-plus" onClick={() => setNavDisplay("none")}></NavIcon></Link>
@@ -83,10 +81,10 @@ const Layout = () => {
                       {
                         currentUser ?
                          <> 
-                        <UserNamePH title={"Log Out"}onClick={signout}> <UserName>{userDetails?.username || "Username" }</UserName></UserNamePH>
+                        <UserNamePH title={"User Profile"}onClick={() => navigate("/user")}> <UserName>{userDetails?.username || "Username" }</UserName></UserNamePH>
                        
                         </> :
-                         <Link to="/login"><UserNamePH title={"Log In"}onClick={signout}> <UserName>{"Log In"}</UserName></UserNamePH></Link>
+                         <Link to="/login"><UserNamePH title={"Log In"}><UserName>{"Log In"}</UserName></UserNamePH></Link>
                       }
 
                    

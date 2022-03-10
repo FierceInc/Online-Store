@@ -9,7 +9,7 @@ export const Auth = createContext()
 
 export const AuthProvider = ({ children }) => {
     const [currentUser, setCurrentUser] = useState("");
-     
+    const [loading, setLoading] = useState(false)
     const createUser = (email, password) => {
        return createUserWithEmailAndPassword(auth, email, password)
         }
@@ -21,22 +21,26 @@ export const AuthProvider = ({ children }) => {
         return sendPasswordResetEmail(auth, email)
     }
 useEffect(() => {
+setLoading(true)
 const unsubscribe =  onAuthStateChanged(auth, (user) => {
     if (user) {
         setCurrentUser(user);
+        setLoading(false)
       } else {
         setCurrentUser(null);
+        setLoading(false)
       }
       });
  
       return unsubscribe
-})
+}, [])
    
     const value = {
         currentUser,
         loginUser,
         createUser,
-        resetPassword
+        resetPassword,
+        loading
     }
     return (
         <Auth.Provider value={value}>

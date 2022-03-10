@@ -11,6 +11,7 @@ import Articles from "../pages/Article";
 import Account from "../pages/Account";
 import { useAuth } from "../Contexts/Auth";
 import ForgotPassword from "../Accounts/ForgotPassword";
+import Profile from "../pages/Profile";
 
 export const App = () => {
   const { currentUser } = useAuth()
@@ -22,9 +23,13 @@ export const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/product/:sneakerId" element={<Product />} />
-          <Route element={currentUser ? <Navigate to="/products" />: <Account/>}>
+          <Route element={currentUser? <Navigate to="/products" /> : <Account/>}>
             <Route path="/login" element={<Account />} />
             <Route path="/signup" element={<Account />} />
+          </Route>
+          <Route element={currentUser === null ? <Navigate to="/login" /> : <Profile/>}>
+            <Route path="/user" element={<Profile />} />
+            <Route path="/update-user" element={<Profile />} />
           </Route>
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/wishlist" element={<Wishlist />} />
