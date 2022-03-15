@@ -4,8 +4,6 @@ import Logo from '../Images/Logo.png'
 import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components'
-import { auth } from '../firebaseConfiguration'
-import { signOut } from "firebase/auth";
 import { useAuth } from "../Contexts/Auth";
 import { useDatabase } from '../Contexts/FirestoreContext';
 

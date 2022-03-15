@@ -59,3 +59,126 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 [debug] [2022-03-08T17:22:39.303Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/shoefits-shop/adminSdkConfig [none]
 [debug] [2022-03-08T17:22:39.982Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/shoefits-shop/adminSdkConfig 200
 [debug] [2022-03-08T17:22:39.983Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/shoefits-shop/adminSdkConfig {"projectId":"shoefits-shop","storageBucket":"shoefits-shop.appspot.com","locationId":"europe-west"}
+[debug] [2022-03-14T09:15:25.910Z] ----------------------------------------------------------------------
+[debug] [2022-03-14T09:15:25.970Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\FIERCE-INC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-03-14T09:15:25.971Z] CLI Version:   10.2.2
+[debug] [2022-03-14T09:15:25.971Z] Platform:      win32
+[debug] [2022-03-14T09:15:25.971Z] Node Version:  v16.4.0
+[debug] [2022-03-14T09:15:26.183Z] Time:          Mon Mar 14 2022 11:15:25 GMT+0200 (South Africa Standard Time)
+[debug] [2022-03-14T09:15:26.183Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-14T09:15:26.223Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-03-14T09:15:26.493Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-14T09:15:26.493Z] > authorizing via signed-in user (fierceincii@gmail.com)
+[info] i  emulators: Starting emulators: auth, firestore, hosting, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, firestore, hosting, storage"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project shoefits-shop. This may result in unexpected behavior. 
+[debug] [2022-03-14T09:15:26.535Z] [hub] writing locator at C:\Users\FIERCE~1\AppData\Local\Temp\hub-shoefits-shop.json
+[debug] [2022-03-14T09:15:26.611Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-03-14T09:15:26.612Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-03-14T09:15:26.612Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\FIERCE-INC\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.13.1.jar","--host","localhost","--port",4005,"--rules","C:\\Users\\FIERCE-INC\\Music\\JAVASCRIPT\\My-React-Store\\react-store\\firestore.rules"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\FIERCE-INC\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.13.1.jar\",\"--host\",\"localhost\",\"--port\",4005,\"--rules\",\"C:\\\\Users\\\\FIERCE-INC\\\\Music\\\\JAVASCRIPT\\\\My-React-Store\\\\react-store\\\\firestore.rules\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2022-03-14T09:15:28.453Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-03-14T09:15:28.453Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-03-14T09:16:24.936Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-03-14T09:16:31.146Z] Temp file directory for storage emulator: C:\Users\FIERCE~1\AppData\Local\Temp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: C:\\Users\\FIERCE~1\\AppData\\Local\\Temp/firebase/storage/blobs"}}
+[debug] [2022-03-14T09:16:34.900Z] > refreshing access token with scopes: []
+[debug] [2022-03-14T09:16:34.901Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-03-14T09:16:35.684Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 14 Mar 2022 09:16:34 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-03-14T09:16:35.858Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/shoefits-shop/sites 
+[debug] [2022-03-14T09:16:36.996Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/shoefits-shop/sites 200
+[debug] [2022-03-14T09:16:36.997Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/shoefits-shop/sites {"sites":[{"name":"projects/595527563851/sites/shoefits-shop","defaultUrl":"https://shoefits-shop.web.app","appId":"1:595527563851:web:25dbb34e198af665022bce","type":"DEFAULT_SITE"}]}
+[debug] [2022-03-14T09:16:36.998Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/shoefits-shop/webApps/1:595527563851:web:25dbb34e198af665022bce/config [none]
+[debug] [2022-03-14T09:16:38.337Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/shoefits-shop/webApps/1:595527563851:web:25dbb34e198af665022bce/config 200
+[debug] [2022-03-14T09:16:38.337Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/shoefits-shop/webApps/1:595527563851:web:25dbb34e198af665022bce/config {"projectId":"shoefits-shop","appId":"1:595527563851:web:25dbb34e198af665022bce","storageBucket":"shoefits-shop.appspot.com","locationId":"europe-west","apiKey":"AIzaSyAs0M-pHA4jTUnF_Jh_-xcBuLMLaWg_Ojk","authDomain":"shoefits-shop.firebaseapp.com","messagingSenderId":"595527563851"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2022-03-14T09:16:39.423Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-03-14T09:16:39.424Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-03-14T09:16:39.424Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\FIERCE-INC\\.cache\\firebase\\emulators\\ui-v1.6.5\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\FIERCE-INC\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.6.5\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-03-14T09:16:40.241Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ localhost:9099 │ http://localhost:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ localhost:4005 │ http://localhost:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Hosting        │ localhost:5000 │ n/a                             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Storage        │ localhost:9199 │ http://localhost:4000/storage   │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-03-15T17:48:17.522Z] ----------------------------------------------------------------------
+[debug] [2022-03-15T17:48:17.528Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\FIERCE-INC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-03-15T17:48:17.529Z] CLI Version:   10.2.2
+[debug] [2022-03-15T17:48:17.529Z] Platform:      win32
+[debug] [2022-03-15T17:48:17.529Z] Node Version:  v16.4.0
+[debug] [2022-03-15T17:48:17.785Z] Time:          Tue Mar 15 2022 19:48:17 GMT+0200 (South Africa Standard Time)
+[debug] [2022-03-15T17:48:17.785Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-15T17:48:17.893Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-03-15T17:48:18.338Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-15T17:48:18.338Z] > authorizing via signed-in user (fierceincii@gmail.com)
+[info] i  emulators: Starting emulators: auth, firestore, hosting, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, firestore, hosting, storage"}}
+[debug] [2022-03-15T17:48:18.403Z] [hub] writing locator at C:\Users\FIERCE~1\AppData\Local\Temp\hub-shoefits-shop.json
+[debug] [2022-03-15T17:48:18.635Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-03-15T17:48:18.635Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-03-15T17:48:18.636Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\FIERCE-INC\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.13.1.jar","--host","localhost","--port",4005,"--rules","C:\\Users\\FIERCE-INC\\Music\\JAVASCRIPT\\My-React-Store\\react-store\\firestore.rules"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\FIERCE-INC\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.13.1.jar\",\"--host\",\"localhost\",\"--port\",4005,\"--rules\",\"C:\\\\Users\\\\FIERCE-INC\\\\Music\\\\JAVASCRIPT\\\\My-React-Store\\\\react-store\\\\firestore.rules\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2022-03-15T17:48:19.583Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-03-15T17:48:19.583Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-03-15T17:49:12.001Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-03-15T17:49:14.294Z] Temp file directory for storage emulator: C:\Users\FIERCE~1\AppData\Local\Temp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: C:\\Users\\FIERCE~1\\AppData\\Local\\Temp/firebase/storage/blobs"}}
+[debug] [2022-03-15T17:49:17.748Z] > refreshing access token with scopes: []
+[debug] [2022-03-15T17:49:17.750Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-03-15T17:49:18.474Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 15 Mar 2022 17:49:18 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-03-15T17:49:19.161Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/shoefits-shop/sites 
+[debug] [2022-03-15T17:49:22.511Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/shoefits-shop/sites 200
+[debug] [2022-03-15T17:49:22.512Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/shoefits-shop/sites {"sites":[{"name":"projects/595527563851/sites/shoefits-shop","defaultUrl":"https://shoefits-shop.web.app","appId":"1:595527563851:web:25dbb34e198af665022bce","type":"DEFAULT_SITE"}]}
+[debug] [2022-03-15T17:49:22.512Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/shoefits-shop/webApps/1:595527563851:web:25dbb34e198af665022bce/config [none]
+[debug] [2022-03-15T17:49:23.997Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/shoefits-shop/webApps/1:595527563851:web:25dbb34e198af665022bce/config 200
+[debug] [2022-03-15T17:49:23.997Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/shoefits-shop/webApps/1:595527563851:web:25dbb34e198af665022bce/config {"projectId":"shoefits-shop","appId":"1:595527563851:web:25dbb34e198af665022bce","storageBucket":"shoefits-shop.appspot.com","locationId":"europe-west","apiKey":"AIzaSyAs0M-pHA4jTUnF_Jh_-xcBuLMLaWg_Ojk","authDomain":"shoefits-shop.firebaseapp.com","messagingSenderId":"595527563851"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2022-03-15T17:49:27.425Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-03-15T17:49:27.425Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-03-15T17:49:27.425Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\FIERCE-INC\\.cache\\firebase\\emulators\\ui-v1.6.5\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\FIERCE-INC\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.6.5\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-03-15T17:49:27.921Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ localhost:9099 │ http://localhost:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ localhost:4005 │ http://localhost:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Hosting        │ localhost:5000 │ n/a                             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Storage        │ localhost:9199 │ http://localhost:4000/storage   │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 

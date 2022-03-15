@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import UserProfile from "../UserProfile/userProfile";
 import UpdateProfile from "../UserProfile/updateProfile"
 import { useLocation } from "react-router-dom";
@@ -14,7 +13,6 @@ else {
     
         switch (location.pathname) {
           case "/user":
-            console.log(location.pathname)
             return <UserProfile />;
           case "/update-user":
             return <UpdateProfile />;
